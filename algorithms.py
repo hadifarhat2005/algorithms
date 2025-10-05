@@ -17,4 +17,14 @@ def find_max(list):
             max_val = x
     return max_val
 
-print(find_max(numbers))        
+print(find_max(numbers))     
+
+
+numbers = [1, 2, 3, 4 ,5]
+def linear_search(numbers, target):
+    for i, val in enumerate(numbers):
+        if val == target:
+            return i
+    return -1
+print(linear_search(numbers, 3))    
+    
